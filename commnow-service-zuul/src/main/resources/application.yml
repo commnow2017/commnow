@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+server:
+  port: 9999
+spring:
+  application:
+    name: commnow-service-zuul
+zuul:
+  routes:
+    api-a:
+      path: /commnow-feign/**
+      serviceId: commnow-server-feign
+    api-b:
+      path: /commnow-wechat/**
+      serviceId: commnow-buiness-wechat

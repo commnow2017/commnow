@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="${port}"></p>
+测试11111222222222222222222222
+<p th:text="${testPojo.getName()}"></p>
+<p th:text="${testPojo.getAge()}"></p>
+<p th:text="${testPojo.getId()}"></p>
+<form action="/add" method="post">
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="name">
+            </td>
+            <td>
+                <input type="text" name="age">
+            </td>
+            <td>
+                <input type="submit" value="提交">
+            </td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>

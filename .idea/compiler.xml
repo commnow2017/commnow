@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="commnow-buiness-wechat" />
+        <module name="commnow-buiness-wechat-1" />
+        <module name="commnow-config-server" />
+        <module name="commnow-eureka-server" />
+        <module name="commnow-server-feign" />
+        <module name="commnow-service-zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="commnow-buiness-wechat" target="1.8" />
+      <module name="commnow-buiness-wechat-1" target="1.8" />
+      <module name="commnow-config-server" target="1.8" />
+      <module name="commnow-eureka-server" target="1.8" />
+      <module name="commnow-server-feign" target="1.8" />
+      <module name="commnow-service-ribbon" target="1.8" />
+      <module name="commnow-service-zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

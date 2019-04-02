@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/commnow-buiness-wechat.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/commnow-buiness-wechat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat-1/commnow-buiness-wechat-1.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat-1/commnow-buiness-wechat-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-config-server/commnow-config-server.iml" filepath="$PROJECT_DIR$/commnow-config-server/commnow-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-eureka-server/commnow-eureka-server.iml" filepath="$PROJECT_DIR$/commnow-eureka-server/commnow-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-server-feign/commnow-server-feign.iml" filepath="$PROJECT_DIR$/commnow-server-feign/commnow-server-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-service-zuul/commnow-service-zuul.iml" filepath="$PROJECT_DIR$/commnow-service-zuul/commnow-service-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/commnowProjcet.iml" filepath="$PROJECT_DIR$/.idea/commnowProjcet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+    </modules>
+  </component>
+</project>

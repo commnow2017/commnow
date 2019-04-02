@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.commnowbuinesswechat.dao.TestDao" >
+
+    <!-- 自定义返回结果集 -->
+    <resultMap id="userMap" type="com.example.commnowbuinesswechat.pojo.TestPojo">
+        <id property="id" column="id" javaType="java.lang.Integer"></id>
+        <result property="name" column="name" javaType="java.lang.String"></result>
+        <result property="age" column="age" javaType="java.lang.Integer"></result>
+    </resultMap>
+
+    <select id="selectUserByName"  resultType="com.example.commnowbuinesswechat.pojo.TestPojo">
+        SELECT * FROM user WHERE name = #{name}
+    </select>
+
+    <insert id="saveUser" useGeneratedKeys="true" keyProperty="id">
+        insert into user (name,age) values (#{name},#{age})
+    </insert>
+
+</mapper>
