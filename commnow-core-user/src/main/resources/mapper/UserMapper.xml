@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.commnowcoreuser.dao" >
+
+    <!-- 自定义返回结果集 -->
+    <resultMap id="userMap" type="com.example.commnowcoreuser.pojo.UserPojo">
+        <id property="id" column="id" javaType="java.lang.Integer"></id>
+        <result property="userName" column="user_name" javaType="java.lang.String"></result>
+        <result property="password" column="password" javaType="java.lang.String"></result>
+        <result property="fullName" column="full_name" javaType="java.lang.String"></result>
+        <result property="dept" column="dept" javaType="java.lang.String"></result>
+        <result property="company" column="company" javaType="java.lang.String"></result>
+        <result property="phone" column="phone" javaType="java.lang.String"></result>
+        <result property="email" column="email" javaType="java.lang.String"></result>
+        <result property="userState" column="user_state" javaType="java.lang.Integer"></result>
+        <result property="parentId" column="parent_id" javaType="java.lang.Integer"></result>
+        <result property="expireDate" column="expire_date" javaType="java.util.Date"></result>
+        <result property="createDate" column="create_date" javaType="java.util.Date"></result>
+    </resultMap>
+
+    <insert id="saveUser" useGeneratedKeys="true" keyProperty="id">
+        insert into commnow_user (user_name,password,full_name,dept,company,phone,email,user_state,parent_id,expire_date,create_date) values (#{userName},#{password},#{fullName},#{dept},#{company},#{phone},#{email},#{userState},#{parentId},#{expireDate},#{createDate})
+    </insert>
+
+    <select id="getUser"  resultType="com.example.commnowcoreuser.pojo.UserPojo">
+        SELECT * FROM commnow_user WHERE #{columnName} = #{columnValue}
+    </select>
+
+</mapper>
