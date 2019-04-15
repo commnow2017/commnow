@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/commnow-buiness-wechat.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/commnow-buiness-wechat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat-test/commnow-buiness-wechat-1.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat-test/commnow-buiness-wechat-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-config-server/commnow-config-server.iml" filepath="$PROJECT_DIR$/commnow-config-server/commnow-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-core-user/commnow-core-user.iml" filepath="$PROJECT_DIR$/commnow-core-user/commnow-core-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-eureka-server/commnow-eureka-server.iml" filepath="$PROJECT_DIR$/commnow-eureka-server/commnow-eureka-server.iml" />

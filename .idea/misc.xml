@@ -17,5 +17,10 @@
         <option value="$PROJECT_DIR$/commnow-core-user/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/commnow-buiness-wechat-test/pom.xml" />
+      </set>
+    </option>
   </component>
 </project>
