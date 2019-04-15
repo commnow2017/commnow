@@ -9,7 +9,9 @@
         <module name="commnow-buiness-wechat" />
         <module name="commnow-buiness-wechat-1" />
         <module name="commnow-config-server" />
+        <module name="commnow-core-user" />
         <module name="commnow-eureka-server" />
+        <module name="commnow-projcet" />
         <module name="commnow-server-feign" />
         <module name="commnow-service-zuul" />
       </profile>
@@ -18,7 +20,9 @@
       <module name="commnow-buiness-wechat" target="1.8" />
       <module name="commnow-buiness-wechat-1" target="1.8" />
       <module name="commnow-config-server" target="1.8" />
+      <module name="commnow-core-user" target="1.8" />
       <module name="commnow-eureka-server" target="1.8" />
+      <module name="commnow-projcet" target="1.5" />
       <module name="commnow-server-feign" target="1.8" />
       <module name="commnow-service-ribbon" target="1.8" />
       <module name="commnow-service-zuul" target="1.8" />

@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/commnow-buiness-wechat-1/pom.xml" />
         <option value="$PROJECT_DIR$/commnow-server-feign/pom.xml" />
         <option value="$PROJECT_DIR$/commnow-service-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-core-user/pom.xml" />
       </list>
     </option>
   </component>
