@@ -8,13 +8,13 @@
       <list>
         <option value="$PROJECT_DIR$/commnow-eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/demo/pom.xml" />
-        <option value="$PROJECT_DIR$/commnow-buiness-wechat/pom.xml" />
         <option value="$PROJECT_DIR$/commnow-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/commnow-buiness-wechat-1/pom.xml" />
         <option value="$PROJECT_DIR$/commnow-server-feign/pom.xml" />
         <option value="$PROJECT_DIR$/commnow-service-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/commnow-core-user/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-server-activiti/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -23,4 +23,5 @@
       </set>
     </option>
   </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

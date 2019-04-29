@@ -7,9 +7,11 @@
       <module fileurl="file://$PROJECT_DIR$/commnow-core-user/commnow-core-user.iml" filepath="$PROJECT_DIR$/commnow-core-user/commnow-core-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-eureka-server/commnow-eureka-server.iml" filepath="$PROJECT_DIR$/commnow-eureka-server/commnow-eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/commnow-projcet.iml" filepath="$PROJECT_DIR$/.idea/commnow-projcet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-server-activiti/commnow-server-activiti.iml" filepath="$PROJECT_DIR$/commnow-server-activiti/commnow-server-activiti.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-server-feign/commnow-server-feign.iml" filepath="$PROJECT_DIR$/commnow-server-feign/commnow-server-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-service-zuul/commnow-service-zuul.iml" filepath="$PROJECT_DIR$/commnow-service-zuul/commnow-service-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-material-server.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/wechat-material-server.iml" />
     </modules>
   </component>
 </project>

@@ -11,8 +11,10 @@
         <module name="commnow-core-user" />
         <module name="commnow-eureka-server" />
         <module name="commnow-projcet" />
+        <module name="commnow-server-activiti" />
         <module name="commnow-server-feign" />
         <module name="commnow-service-zuul" />
+        <module name="wechat-material-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,9 +24,11 @@
       <module name="commnow-core-user" target="1.8" />
       <module name="commnow-eureka-server" target="1.8" />
       <module name="commnow-projcet" target="1.5" />
+      <module name="commnow-server-activiti" target="1.8" />
       <module name="commnow-server-feign" target="1.8" />
       <module name="commnow-service-ribbon" target="1.8" />
       <module name="commnow-service-zuul" target="1.8" />
+      <module name="wechat-material-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

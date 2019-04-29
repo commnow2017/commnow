@@ -8,9 +8,22 @@
     <artifactId>commnow-projcet</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+    </dependencies>
+
     <modules>
         <module>commnow-buiness-wechat</module>
-        <module>commnow-buiness-wechat-1</module>
+        <module>commnow-server-activiti</module>
         <module>commnow-server-feign</module>
         <module>commnow-service-zuul</module>
     </modules>

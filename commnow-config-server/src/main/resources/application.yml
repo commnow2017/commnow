@@ -7,7 +7,7 @@ server:
 spring:
   cloud:
     config:
-      label: master # ≈‰÷√≤÷ø‚µƒ∑÷÷ß
+      label: master
       server:
         git:
           uri: https://gitee.com/lzz54/commnow
