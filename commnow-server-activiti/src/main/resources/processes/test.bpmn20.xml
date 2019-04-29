@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:activiti="http://activiti.org/bpmn"
+             targetNamespace="http://www.mario.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <process id="testProcess">
+
+        <startEvent id="theStart" />
+        <sequenceFlow id="flow1" sourceRef="theStart" targetRef="exclusiveGw" />
+
+        <exclusiveGateway id="exclusiveGw" name="Exclusive Gateway" />
+
+        <sequenceFlow id="flow2" sourceRef="exclusiveGw" targetRef="isAge">
+            <conditionExpression xsi:type="tFormalExpression">${age >= 18}</conditionExpression>
+        </sequenceFlow>
+
+        <sequenceFlow id="flow3" sourceRef="exclusiveGw" targetRef="print">
+            <conditionExpression xsi:type="tFormalExpression">${18 >= age}</conditionExpression>
+        </sequenceFlow>
+
+        <serviceTask id="print" activiti:expression="#{printer.testMesf(name,'未成年欢迎来测试activiti')}" />
+        <sequenceFlow id="flow4" sourceRef="print" targetRef="theTask" />
+
+        <serviceTask id="isAge" activiti:expression="#{printer.testAge(name,'成年欢迎来测试activiti')}" />
+        <sequenceFlow id="flow5" sourceRef="isAge" targetRef="theTask" />
+
+        <userTask id="theTask" name="msliao" />
+        <sequenceFlow id="flow6" sourceRef="theTask" targetRef="theEnd" />
+        <endEvent id="theEnd" />
+
+    </process>
+</definitions>
