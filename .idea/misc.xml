@@ -15,6 +15,31 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/commnow-core-user/pom.xml" />
         <option value="$PROJECT_DIR$/commnow-server-activiti/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-buiness-wechat/wechat-material-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-buiness-wechat/wechat-template-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-buiness-wechat/wechat-menu-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-buiness-wechat/wechat-message-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-buiness-wechat/wechat-account-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-utils-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-utils-server/util-http-request-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-utils-server/util-images-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-utils-server/util-file-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-utils-server/util-quratz-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-utils-server/util-date-time-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-contacts-server/commnow-contacts-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-contacts-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-email-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-meeting-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-meeting-server/meeting-online-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-meeting-server/meeting-offline-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-forms-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-template-library-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-tag-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-customer-flow-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-statistics-server/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-core-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-core-pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/commnow-redis-server/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

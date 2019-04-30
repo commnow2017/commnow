@@ -3,13 +3,37 @@
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commnow-buiness-wechat" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/commnow-buiness-wechat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-account-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-material-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-menu-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-message-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-template-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commnow-config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commnow-config-server/src/main/resources/application.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/commnow-contacts-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-contacts-server/commnow-contacts-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-core-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-core-pojo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commnow-core-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-customer-flow-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-email-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commnow-eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-forms-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-meeting-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-meeting-server/meeting-offline-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-meeting-server/meeting-online-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-redis-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commnow-server-activiti" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commnow-server-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commnow-service-zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-statistics-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-tag-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-template-library-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-utils-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-utils-server/util-date-time-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-utils-server/util-file-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-utils-server/util-http-request-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-utils-server/util-images-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commnow-utils-server/util-quratz-server" charset="UTF-8" />
   </component>
 </project>

@@ -8,27 +8,79 @@
         <outputRelativeToContentRoot value="true" />
         <module name="commnow-buiness-wechat" />
         <module name="commnow-config-server" />
+        <module name="commnow-contacts-server" />
+        <module name="commnow-core-dao" />
+        <module name="commnow-core-pojo" />
         <module name="commnow-core-user" />
+        <module name="commnow-customer-flow-server" />
+        <module name="commnow-email-server" />
         <module name="commnow-eureka-server" />
+        <module name="commnow-forms-server" />
+        <module name="commnow-meeting-server" />
         <module name="commnow-projcet" />
+        <module name="commnow-redis-server" />
         <module name="commnow-server-activiti" />
         <module name="commnow-server-feign" />
         <module name="commnow-service-zuul" />
+        <module name="commnow-statistics-server" />
+        <module name="commnow-tag-server" />
+        <module name="commnow-template-library-server" />
+        <module name="commnow-utils-server" />
+        <module name="meeting-offline-server" />
+        <module name="meeting-online-server" />
+        <module name="util-date-time-server" />
+        <module name="util-file-server" />
+        <module name="util-http-request-server" />
+        <module name="util-images-server" />
+        <module name="util-quratz-server" />
+        <module name="wechat-account-server" />
         <module name="wechat-material-server" />
+        <module name="wechat-menu-server" />
+        <module name="wechat-message-server" />
+        <module name="wechat-template-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="commnow-buiness-wechat" target="1.8" />
       <module name="commnow-buiness-wechat-1" target="1.8" />
       <module name="commnow-config-server" target="1.8" />
+      <module name="commnow-contacts-server" target="1.8" />
+      <module name="commnow-core-dao" target="1.8" />
+      <module name="commnow-core-pojo" target="1.8" />
       <module name="commnow-core-user" target="1.8" />
+      <module name="commnow-customer-flow-server" target="1.8" />
+      <module name="commnow-email-server" target="1.8" />
       <module name="commnow-eureka-server" target="1.8" />
+      <module name="commnow-forms-server" target="1.8" />
+      <module name="commnow-meeting-server" target="1.8" />
       <module name="commnow-projcet" target="1.5" />
+      <module name="commnow-redis-server" target="1.8" />
       <module name="commnow-server-activiti" target="1.8" />
       <module name="commnow-server-feign" target="1.8" />
       <module name="commnow-service-ribbon" target="1.8" />
       <module name="commnow-service-zuul" target="1.8" />
+      <module name="commnow-statistics-server" target="1.8" />
+      <module name="commnow-tag-server" target="1.8" />
+      <module name="commnow-template-library-server" target="1.8" />
+      <module name="commnow-utils-server" target="1.8" />
+      <module name="meeting-offline-server" target="1.8" />
+      <module name="meeting-online-server" target="1.8" />
+      <module name="util-date-time-server" target="1.8" />
+      <module name="util-file-server" target="1.8" />
+      <module name="util-http-request-server" target="1.8" />
+      <module name="util-images-server" target="1.8" />
+      <module name="util-quratz-server" target="1.8" />
+      <module name="wechat-account-server" target="1.8" />
       <module name="wechat-material-server" target="1.8" />
+      <module name="wechat-menu-server" target="1.8" />
+      <module name="wechat-message-server" target="1.8" />
+      <module name="wechat-template-server" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="commnow-buiness-wechat" options="-parameters" />
+      <module name="wechat-material-server" options="" />
+    </option>
   </component>
 </project>

@@ -4,14 +4,38 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/commnow-buiness-wechat.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/commnow-buiness-wechat.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-config-server/commnow-config-server.iml" filepath="$PROJECT_DIR$/commnow-config-server/commnow-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-contacts-server/commnow-contacts-server.iml" filepath="$PROJECT_DIR$/commnow-contacts-server/commnow-contacts-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-core-dao/commnow-core-dao.iml" filepath="$PROJECT_DIR$/commnow-core-dao/commnow-core-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-core-pojo/commnow-core-pojo.iml" filepath="$PROJECT_DIR$/commnow-core-pojo/commnow-core-pojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-core-user/commnow-core-user.iml" filepath="$PROJECT_DIR$/commnow-core-user/commnow-core-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-customer-flow-server/commnow-customer-flow-server.iml" filepath="$PROJECT_DIR$/commnow-customer-flow-server/commnow-customer-flow-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-email-server/commnow-email-server.iml" filepath="$PROJECT_DIR$/commnow-email-server/commnow-email-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-eureka-server/commnow-eureka-server.iml" filepath="$PROJECT_DIR$/commnow-eureka-server/commnow-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-forms-server/commnow-forms-server.iml" filepath="$PROJECT_DIR$/commnow-forms-server/commnow-forms-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-meeting-server/commnow-meeting-server.iml" filepath="$PROJECT_DIR$/commnow-meeting-server/commnow-meeting-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/commnow-projcet.iml" filepath="$PROJECT_DIR$/.idea/commnow-projcet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-redis-server/commnow-redis-server.iml" filepath="$PROJECT_DIR$/commnow-redis-server/commnow-redis-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-server-activiti/commnow-server-activiti.iml" filepath="$PROJECT_DIR$/commnow-server-activiti/commnow-server-activiti.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-server-feign/commnow-server-feign.iml" filepath="$PROJECT_DIR$/commnow-server-feign/commnow-server-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-service-zuul/commnow-service-zuul.iml" filepath="$PROJECT_DIR$/commnow-service-zuul/commnow-service-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-statistics-server/commnow-statistics-server.iml" filepath="$PROJECT_DIR$/commnow-statistics-server/commnow-statistics-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-tag-server/commnow-tag-server.iml" filepath="$PROJECT_DIR$/commnow-tag-server/commnow-tag-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-template-library-server/commnow-template-library-server.iml" filepath="$PROJECT_DIR$/commnow-template-library-server/commnow-template-library-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-utils-server/commnow-utils-server.iml" filepath="$PROJECT_DIR$/commnow-utils-server/commnow-utils-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-meeting-server/meeting-offline-server/meeting-offline-server.iml" filepath="$PROJECT_DIR$/commnow-meeting-server/meeting-offline-server/meeting-offline-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-meeting-server/meeting-online-server/meeting-online-server.iml" filepath="$PROJECT_DIR$/commnow-meeting-server/meeting-online-server/meeting-online-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-utils-server/util-date-time-server/util-date-time-server.iml" filepath="$PROJECT_DIR$/commnow-utils-server/util-date-time-server/util-date-time-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-utils-server/util-file-server/util-file-server.iml" filepath="$PROJECT_DIR$/commnow-utils-server/util-file-server/util-file-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-utils-server/util-http-request-server/util-http-request-server.iml" filepath="$PROJECT_DIR$/commnow-utils-server/util-http-request-server/util-http-request-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-utils-server/util-images-server/util-images-server.iml" filepath="$PROJECT_DIR$/commnow-utils-server/util-images-server/util-images-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-utils-server/util-quratz-server/util-quratz-server.iml" filepath="$PROJECT_DIR$/commnow-utils-server/util-quratz-server/util-quratz-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-account-server/wechat-account-server.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/wechat-account-server/wechat-account-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-material-server/wechat-material-server.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/wechat-material-server/wechat-material-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-material-server.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/wechat-material-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-menu-server/wechat-menu-server.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/wechat-menu-server/wechat-menu-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-message-server/wechat-message-server.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/wechat-message-server/wechat-message-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-template-server/wechat-template-server.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/wechat-template-server/wechat-template-server.iml" />
     </modules>
   </component>
 </project>
