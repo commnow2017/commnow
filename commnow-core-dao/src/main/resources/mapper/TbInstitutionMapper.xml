@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.TbInstitutionMapper">
+  <resultMap id="BaseResultMap" type="com.example.commnowcorepojo.pojo.TbInstitution">
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="INFO" jdbcType="VARCHAR" property="info" />
+    <result column="USER_ID" jdbcType="INTEGER" property="userId" />
+    <result column="PARENT_ID" jdbcType="INTEGER" property="parentId" />
+    <result column="TOP_ID" jdbcType="INTEGER" property="topId" />
+    <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID, NAME, INFO, USER_ID, PARENT_ID, TOP_ID, CREATE_DATE
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_institution
+    where ID = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_institution
+    where ID = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.example.commnowcorepojo.pojo.TbInstitution">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into tb_institution (NAME, INFO, USER_ID, 
+      PARENT_ID, TOP_ID, CREATE_DATE
+      )
+    values (#{name,jdbcType=VARCHAR}, #{info,jdbcType=VARCHAR}, #{userId,jdbcType=INTEGER}, 
+      #{parentId,jdbcType=INTEGER}, #{topId,jdbcType=INTEGER}, #{createDate,jdbcType=TIMESTAMP}
+      )
+  </insert>
+
+
+    <select id="list" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select
+        <include refid="Base_Column_List"/>
+        from tb_commnow_permission
+        where
+        1=1
+        <if test="searchParam != null and searchParam != ''">
+            and CONCAT(NAME) LIKE CONCAT('%',#{searchParam},'%')
+        </if>
+        <if test="pId != null">
+            and PARENT_ID = #{pId}
+        </if>
+    </select>
+
+  <insert id="insertSelective" parameterType="com.example.commnowcorepojo.pojo.TbInstitution">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into tb_institution
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        NAME,
+      </if>
+      <if test="info != null">
+        INFO,
+      </if>
+      <if test="userId != null">
+        USER_ID,
+      </if>
+      <if test="parentId != null">
+        PARENT_ID,
+      </if>
+      <if test="topId != null">
+        TOP_ID,
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="info != null">
+        #{info,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="parentId != null">
+        #{parentId,jdbcType=INTEGER},
+      </if>
+      <if test="topId != null">
+        #{topId,jdbcType=INTEGER},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.commnowcorepojo.pojo.TbInstitution">
+    update tb_institution
+    <set>
+      <if test="name != null">
+        NAME = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="info != null">
+        INFO = #{info,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        USER_ID = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="parentId != null">
+        PARENT_ID = #{parentId,jdbcType=INTEGER},
+      </if>
+      <if test="topId != null">
+        TOP_ID = #{topId,jdbcType=INTEGER},
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.commnowcorepojo.pojo.TbInstitution">
+    update tb_institution
+    set NAME = #{name,jdbcType=VARCHAR},
+      INFO = #{info,jdbcType=VARCHAR},
+      USER_ID = #{userId,jdbcType=INTEGER},
+      PARENT_ID = #{parentId,jdbcType=INTEGER},
+      TOP_ID = #{topId,jdbcType=INTEGER},
+      CREATE_DATE = #{createDate,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+    <resultMap id="BaseResultMap" type="com.example.commnowcorepojo.pojo.TbInstitution">
+        <id column="ID" jdbcType="INTEGER" property="id" />
+        <result column="NAME" jdbcType="VARCHAR" property="name" />
+        <result column="INFO" jdbcType="VARCHAR" property="info" />
+        <result column="USER_ID" jdbcType="INTEGER" property="userId" />
+        <result column="PARENT_ID" jdbcType="INTEGER" property="parentId" />
+        <result column="TOP_ID" jdbcType="INTEGER" property="topId" />
+        <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+    </resultMap>
+    <sql id="Base_Column_List">
+    ID, NAME, INFO, USER_ID, PARENT_ID, TOP_ID, CREATE_DATE
+  </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tb_institution
+        where ID = #{id,jdbcType=INTEGER}
+    </select>
+
+    <select id="list" resultType="com.example.commnowcorepojo.pojo.TbInstitution">
+        SELECT u.* FROM `tb_commnow_user` u LEFT JOIN `tb_institution` i ON u.`INSTITUTION_ID` = i.`ID` WHERE 1=1
+        <if test="searchParam != null and searchParam != ''">
+            AND CONCAT(name) LIKE CONCAT('%',#{searchParam},'%')
+        </if>
+        <if test="pId != null">
+            AND parentId = #{pId}
+        </if>
+    </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_institution
+    where ID = #{id,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" parameterType="com.example.commnowcorepojo.pojo.TbInstitution">
+        <selectKey keyProperty="userId" order="AFTER" resultType="java.lang.Integer">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into tb_institution (ID, NAME, INFO,
+        PARENT_ID, TOP_ID, CREATE_DATE
+        )
+        values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{info,jdbcType=VARCHAR},
+        #{parentId,jdbcType=INTEGER}, #{topId,jdbcType=INTEGER}, #{createDate,jdbcType=TIMESTAMP}
+        )
+    </insert>
+    <insert id="insertSelective" parameterType="com.example.commnowcorepojo.pojo.TbInstitution">
+        <selectKey keyProperty="userId" order="AFTER" resultType="java.lang.Integer">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into tb_institution
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                ID,
+            </if>
+            <if test="name != null">
+                NAME,
+            </if>
+            <if test="info != null">
+                INFO,
+            </if>
+            <if test="parentId != null">
+                PARENT_ID,
+            </if>
+            <if test="topId != null">
+                TOP_ID,
+            </if>
+            <if test="createDate != null">
+                CREATE_DATE,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="info != null">
+                #{info,jdbcType=VARCHAR},
+            </if>
+            <if test="parentId != null">
+                #{parentId,jdbcType=INTEGER},
+            </if>
+            <if test="topId != null">
+                #{topId,jdbcType=INTEGER},
+            </if>
+            <if test="createDate != null">
+                #{createDate,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.example.commnowcorepojo.pojo.TbInstitution">
+        update tb_institution
+        <set>
+            <if test="name != null">
+                NAME = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="info != null">
+                INFO = #{info,jdbcType=VARCHAR},
+            </if>
+            <if test="userId != null">
+                USER_ID = #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="parentId != null">
+                PARENT_ID = #{parentId,jdbcType=INTEGER},
+            </if>
+            <if test="topId != null">
+                TOP_ID = #{topId,jdbcType=INTEGER},
+            </if>
+            <if test="createDate != null">
+                CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where ID = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.example.commnowcorepojo.pojo.TbInstitution">
+    update tb_institution
+    set NAME = #{name,jdbcType=VARCHAR},
+      INFO = #{info,jdbcType=VARCHAR},
+      USER_ID = #{userId,jdbcType=INTEGER},
+      PARENT_ID = #{parentId,jdbcType=INTEGER},
+      TOP_ID = #{topId,jdbcType=INTEGER},
+      CREATE_DATE = #{createDate,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

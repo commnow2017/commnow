@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.commnowcoredao.dao.TbCommnowUserMapper">
+    <resultMap id="BaseResultMap" type="com.example.commnowcorepojo.pojo.TbCommnowUser">
+        <id column="USER_ID" property="userId" jdbcType="INTEGER"/>
+        <result column="USER_NAME" property="userName" jdbcType="VARCHAR"/>
+        <result column="PASSWORD" property="password" jdbcType="VARCHAR"/>
+        <result column="FULL_NAME" property="fullName" jdbcType="VARCHAR"/>
+        <result column="DEPT" property="dept" jdbcType="VARCHAR"/>
+        <result column="COMPANY" property="company" jdbcType="VARCHAR"/>
+        <result column="PHONE" property="phone" jdbcType="VARCHAR"/>
+        <result column="EMAIL" property="email" jdbcType="VARCHAR"/>
+        <result column="USER_IMG" property="userImg" jdbcType="VARCHAR"/>
+        <result column="INSTITUTION_ID" property="institutionId" jdbcType="INTEGER"/>
+        <result column="USER_STATE" property="userState" jdbcType="INTEGER"/>
+        <result column="EXPIRE_DATE" property="expireDate" jdbcType="TIMESTAMP"/>
+        <result column="CREATE_DATE" property="createDate" jdbcType="TIMESTAMP"/>
+        <result column="UPDATE_DATE" property="updateDate" jdbcType="TIMESTAMP"/>
+        <result column="CANCEL_DATE" property="cancelDate" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    USER_ID, USER_NAME, PASSWORD, FULL_NAME, DEPT, COMPANY, PHONE, EMAIL, USER_IMG, INSTITUTION_ID,
+    USER_STATE, EXPIRE_DATE, CREATE_DATE, UPDATE_DATE, CANCEL_DATE
+  </sql>
+
+    <select id="list" resultType="com.example.commnowcorepojo.pojo.TbCommnowUser">
+        SELECT u.* FROM `tb_commnow_user` u LEFT JOIN `tb_institution` i ON u.`INSTITUTION_ID` = i.`ID` WHERE i.`PARENT_ID` = #{pId}
+        <if test="searchParam != null and searchParam != ''">
+            AND CONCAT(user_name,EMAIL,PHONE,COMPANY) LIKE CONCAT('%',#{searchParam},'%')
+        </if>
+    </select>
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List"/>
+        from tb_commnow_user
+        where USER_ID = #{userId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete from tb_commnow_user
+        where USER_ID = #{userId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="com.example.commnowcorepojo.pojo.TbCommnowUser">
+        <selectKey resultType="java.lang.Integer" keyProperty="userId" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into tb_commnow_user (USER_NAME, PASSWORD, FULL_NAME,
+        DEPT, COMPANY, PHONE,
+        EMAIL, USER_IMG, INSTITUTION_ID,
+        USER_STATE, EXPIRE_DATE, CREATE_DATE,
+        UPDATE_DATE, CANCEL_DATE)
+        values (#{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{fullName,jdbcType=VARCHAR},
+        #{dept,jdbcType=VARCHAR}, #{company,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR},
+        #{email,jdbcType=VARCHAR}, #{userImg,jdbcType=VARCHAR}, #{institutionId,jdbcType=INTEGER},
+        #{userState,jdbcType=INTEGER}, #{expireDate,jdbcType=TIMESTAMP}, #{createDate,jdbcType=TIMESTAMP},
+        #{updateDate,jdbcType=TIMESTAMP}, #{cancelDate,jdbcType=TIMESTAMP})
+    </insert>
+    <insert id="insertSelective" parameterType="com.example.commnowcorepojo.pojo.TbCommnowUser">
+        <selectKey resultType="java.lang.Integer" keyProperty="userId" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into tb_commnow_user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userName != null">
+                USER_NAME,
+            </if>
+            <if test="password != null">
+                PASSWORD,
+            </if>
+            <if test="fullName != null">
+                FULL_NAME,
+            </if>
+            <if test="dept != null">
+                DEPT,
+            </if>
+            <if test="company != null">
+                COMPANY,
+            </if>
+            <if test="phone != null">
+                PHONE,
+            </if>
+            <if test="email != null">
+                EMAIL,
+            </if>
+            <if test="userImg != null">
+                USER_IMG,
+            </if>
+            <if test="institutionId != null">
+                INSTITUTION_ID,
+            </if>
+            <if test="userState != null">
+                USER_STATE,
+            </if>
+            <if test="expireDate != null">
+                EXPIRE_DATE,
+            </if>
+            <if test="createDate != null">
+                CREATE_DATE,
+            </if>
+            <if test="updateDate != null">
+                UPDATE_DATE,
+            </if>
+            <if test="cancelDate != null">
+                CANCEL_DATE,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userName != null">
+                #{userName,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null">
+                #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="fullName != null">
+                #{fullName,jdbcType=VARCHAR},
+            </if>
+            <if test="dept != null">
+                #{dept,jdbcType=VARCHAR},
+            </if>
+            <if test="company != null">
+                #{company,jdbcType=VARCHAR},
+            </if>
+            <if test="phone != null">
+                #{phone,jdbcType=VARCHAR},
+            </if>
+            <if test="email != null">
+                #{email,jdbcType=VARCHAR},
+            </if>
+            <if test="userImg != null">
+                #{userImg,jdbcType=VARCHAR},
+            </if>
+            <if test="institutionId != null">
+                #{institutionId,jdbcType=INTEGER},
+            </if>
+            <if test="userState != null">
+                #{userState,jdbcType=INTEGER},
+            </if>
+            <if test="expireDate != null">
+                #{expireDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createDate != null">
+                #{createDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateDate != null">
+                #{updateDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="cancelDate != null">
+                #{cancelDate,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.example.commnowcorepojo.pojo.TbCommnowUser">
+        update tb_commnow_user
+        <set>
+            <if test="userName != null">
+                USER_NAME = #{userName,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null">
+                PASSWORD = #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="fullName != null">
+                FULL_NAME = #{fullName,jdbcType=VARCHAR},
+            </if>
+            <if test="dept != null">
+                DEPT = #{dept,jdbcType=VARCHAR},
+            </if>
+            <if test="company != null">
+                COMPANY = #{company,jdbcType=VARCHAR},
+            </if>
+            <if test="phone != null">
+                PHONE = #{phone,jdbcType=VARCHAR},
+            </if>
+            <if test="email != null">
+                EMAIL = #{email,jdbcType=VARCHAR},
+            </if>
+            <if test="userImg != null">
+                USER_IMG = #{userImg,jdbcType=VARCHAR},
+            </if>
+            <if test="institutionId != null">
+                INSTITUTION_ID = #{institutionId,jdbcType=INTEGER},
+            </if>
+            <if test="userState != null">
+                USER_STATE = #{userState,jdbcType=INTEGER},
+            </if>
+            <if test="expireDate != null">
+                EXPIRE_DATE = #{expireDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createDate != null">
+                CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateDate != null">
+                UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="cancelDate != null">
+                CANCEL_DATE = #{cancelDate,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where USER_ID = #{userId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.example.commnowcorepojo.pojo.TbCommnowUser">
+    update tb_commnow_user
+    set USER_NAME = #{userName,jdbcType=VARCHAR},
+      PASSWORD = #{password,jdbcType=VARCHAR},
+      FULL_NAME = #{fullName,jdbcType=VARCHAR},
+      DEPT = #{dept,jdbcType=VARCHAR},
+      COMPANY = #{company,jdbcType=VARCHAR},
+      PHONE = #{phone,jdbcType=VARCHAR},
+      EMAIL = #{email,jdbcType=VARCHAR},
+      USER_IMG = #{userImg,jdbcType=VARCHAR},
+      INSTITUTION_ID = #{institutionId,jdbcType=INTEGER},
+      USER_STATE = #{userState,jdbcType=INTEGER},
+      EXPIRE_DATE = #{expireDate,jdbcType=TIMESTAMP},
+      CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP},
+      CANCEL_DATE = #{cancelDate,jdbcType=TIMESTAMP}
+    where USER_ID = #{userId,jdbcType=INTEGER}
+  </update>
+</mapper>
