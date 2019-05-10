@@ -25,17 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-meeting-server/meeting-offline-server/meeting-offline-server.iml" filepath="$PROJECT_DIR$/commnow-meeting-server/meeting-offline-server/meeting-offline-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-meeting-server/meeting-online-server/meeting-online-server.iml" filepath="$PROJECT_DIR$/commnow-meeting-server/meeting-online-server/meeting-online-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commnow-utils-server/util-date-time-server/util-date-time-server.iml" filepath="$PROJECT_DIR$/commnow-utils-server/util-date-time-server/util-date-time-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commnow-utils-server/util-file-server/util-file-server.iml" filepath="$PROJECT_DIR$/commnow-utils-server/util-file-server/util-file-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commnow-utils-server/util-http-request-server/util-http-request-server.iml" filepath="$PROJECT_DIR$/commnow-utils-server/util-http-request-server/util-http-request-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commnow-utils-server/util-images-server/util-images-server.iml" filepath="$PROJECT_DIR$/commnow-utils-server/util-images-server/util-images-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/commnow-utils-server/util-quratz-server/util-quratz-server.iml" filepath="$PROJECT_DIR$/commnow-utils-server/util-quratz-server/util-quratz-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-account-server/wechat-account-server.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/wechat-account-server/wechat-account-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-material-server/wechat-material-server.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/wechat-material-server/wechat-material-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-material-server.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/wechat-material-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-menu-server/wechat-menu-server.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/wechat-menu-server/wechat-menu-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-message-server/wechat-message-server.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/wechat-message-server/wechat-message-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commnow-buiness-wechat/wechat-template-server/wechat-template-server.iml" filepath="$PROJECT_DIR$/commnow-buiness-wechat/wechat-template-server/wechat-template-server.iml" />
     </modules>
   </component>
 </project>

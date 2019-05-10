@@ -26,6 +26,9 @@
         <module>commnow-server-activiti</module>
         <module>commnow-server-feign</module>
         <module>commnow-service-zuul</module>
+        <module>commnow-core-pojo</module>
+        <module>commnow-utils-server</module>
+        <module>commnow-utils-server/util-quratz-server</module>
     </modules>
 
     <properties>

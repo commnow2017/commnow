@@ -28,16 +28,7 @@
         <module name="commnow-utils-server" />
         <module name="meeting-offline-server" />
         <module name="meeting-online-server" />
-        <module name="util-date-time-server" />
-        <module name="util-file-server" />
-        <module name="util-http-request-server" />
-        <module name="util-images-server" />
         <module name="util-quratz-server" />
-        <module name="wechat-account-server" />
-        <module name="wechat-material-server" />
-        <module name="wechat-menu-server" />
-        <module name="wechat-message-server" />
-        <module name="wechat-template-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -79,7 +70,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="commnow-buiness-wechat" options="-parameters" />
+      <module name="commnow-buiness-wechat" options="" />
       <module name="wechat-material-server" options="" />
     </option>
   </component>
